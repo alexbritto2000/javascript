@@ -8,7 +8,7 @@ const multiplyThree = nums.map((num, i, arr) => {
   //3. actual array
   return num * 3;
 });
-console.log(multiplyThree,'map');
+console.log(multiplyThree);
 //output --> [3,6,9,12]
 
 // what is filter()
@@ -17,8 +17,8 @@ const filterNums = [1, 2, 3, 4];
 const moreThanTwo = nums.filter((num, i) => {
   return num > 2;
 });
-console.log(moreThanTwo,'filter');
-console.log(Array.prototype,'filter');
+console.log(moreThanTwo);
+console.log(Array.prototype);
 
 // what is reduce()
 // reduces an array of value down to one value
@@ -32,7 +32,7 @@ const sum = nums.reduce((acc, curr, i, arr) => {
   // first iterate accumalator doesn't have value so it takes first element of array as value for accumalator
 }, 0);
 //0 is initial value
-console.log(sum,'reduce');
+console.log(sum);
 
 //PolyFill for map()
 Array.prototype.myMap = function (cb) {
@@ -52,7 +52,4 @@ newMyArray = myArrayMap.myMap((item, i, arr) => {
 });
 console.log(newMyArray);
 
-
-Array.prototype.filter = function(cb) {
-  let 
-}
+//PolyFill for filter()
