@@ -1,7 +1,6 @@
 var x = [];
 var z = [1,2,3,4,5,6].forEach(a => x.push({name:'Name', age:a*2}))
 //filter
-
 var below8 = x.filter(a => a.age < 8);
 var newbelow8 = below8.map(a=>{
   return {...a}
